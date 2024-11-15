@@ -1,0 +1,308 @@
+body {
+    font-family: "Times New Roman", serif;
+    background-color: rgb(35, 35, 36);
+}
+
+img {
+    width: 3em;
+}
+
+/*
+:root {
+    --primary-color: #ffffff;
+  
+    --secondary-color: #ffed4a;
+
+    --text-color: #333333;
+ 
+}
+
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.sub {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    width: 86vw;
+    margin: auto;
+
+}
+
+.btn {
+    padding: 0.2em;
+    background-color: var(--primary-color);
+    color: white;
+    border: 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+    margin: 0.3em auto;
+    width: 10em;
+    height: 3em;
+    font-size: 0.9em;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3), 0 5px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.btn:hover {
+    background-color: #68628d;
+}
+
+#experience-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience {
+    border-radius: 0.5em 0;
+    padding: 2.3em;
+    margin: 1em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: relative;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3), 0 -20px 30px rgba(0, 0, 0, 0.3);
+
+}
+
+#contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-block img {
+    margin-right: 0.3em;
+}
+
+.contact-block {
+    display: flex;
+    padding: 1em;
+
+    align-items: center;
+    margin: 0.5em auto;
+    background-color: white;
+    height: 4em;
+    border-radius: 0.5em;
+    color: black;
+    max-width: 20em;
+
+    position: relative;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3), 0 -20px 30px rgba(0, 0, 0, 0.3);
+
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project h4 {
+    font-size: 2em;
+}
+
+.video {
+
+    position: relative;
+    border-radius: 0.5em;
+    width: 38em;
+    height: 21.4em;
+}
+
+.project {
+
+    border-radius: 0.5em 0;
+    padding: 2.3em;
+    margin: 1em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3), 0 -20px 30px rgba(0, 0, 0, 0.3);
+}
+
+.intro h2 {
+    text-align: center;
+    font-size: 5em;
+    color: var(--primary-color);
+    animation: fadeIn 0.6s ease-in-out forwards;
+
+}
+
+.intro h3 {
+    font-size: 2em;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.intro {
+    width: 70vw;
+    margin-bottom: 4em;
+
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 1em;
+    color: var(--primary-color);
+}
+
+.title-section {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.title h1 {
+    margin-bottom: -0.1em;
+    margin-top: 0;
+}
+
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+img {
+    height: 3em;
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+}
+
+#skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 60em;
+    margin: auto;
+}
+
+.skill {
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    background-color: #dedede;
+    box-shadow: 0 0 0 2px grey;
+    margin: 0.8em;
+    width: 4em;
+    height: 4em;
+    color: black;
+
+    position: relative;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3), 0 -20px 30px rgba(0, 0, 0, 0.3);
+}
+
+.block {
+    margin-bottom: 3em;
+    padding: 3em;
+    padding-top: 0.1px;
+    width: 70vw;
+    background-color: var(--primary-color);
+    border-radius: 0.5em;
+    color: white;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3), 0 -20px 30px rgba(0, 0, 0, 0.3);
+
+}
+
+.block h3 {
+    text-align: center;
+    font-size: 2em;
+
+}
+
+.small-sub {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .sub {
+        display: none;
+    }
+
+    .intro h2 {
+        font-size: 5em;
+    }
+
+    .intro h3 {
+        font-size: 1.3em;
+        text-align: left;
+    }
+
+    .menu-button {
+        border: 0;
+        background: none;
+    }
+
+    .menu-popup {
+        display: none;
+    }
+
+    .menu-popup.show {
+        background-color: #797ef5;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: fit-content;
+        
+    }
+
+    .small-sub {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        right: 0;
+        margin-right: 0.5em;
+        margin-top: -0.4em;
+        z-index: 2;
+    }
+
+    #skill-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .skill {
+        width: 2.6em;
+        height: 2.6em;
+        font-size: 0.8em;
+    }
+
+    .video {
+        width: 20em;
+        height: 11.2em;
+    }
+} 
+*/

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body
+    class="bg-neutral-900 absolute inset-0 h-full w-full bg-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]">
+    
+
+    <style>
+        .animate.pop1 {
+        animation-duration: 0.3s;
+        animation-name: animate-pop;
+        animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+        }
+
+        .animate.pop2 {
+        animation-duration: 0.4s;
+        animation-name: animate-pop;
+        animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+        }
+
+        .animate.pop3 {
+        animation-duration: 0.5s;
+        animation-name: animate-pop;
+        animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+        }
+
+        .animate.pop4 {
+        animation-duration: 0.6s;
+        animation-name: animate-pop;
+        animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+        }
+
+        .skill {
+            margin: 0.5em;
+        }
+
+        @media screen and (min-width:600px) {
+            .skill {
+            margin: 1.1em;
+        }
+        }
+
+        @keyframes animate-pop {
+        0% {
+            opacity: 0;
+            transform: scale(0.5, 0.5);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scale(1, 1);
+        }
+        }
+    </style>
+
+<header class="header">
+    <div
+        class="flex justify-center shadow-lg w-fit m-auto p-2 rounded-lg mt-10 border border-zinc-700 bg-gradient-to-tl from-neutral-900 to-neutral-700">
+        <button class="m-1 p-1 text-white hover:text-neutral-300" onclick="hey('Contact')">Education</button>
+        <button class="m-1 p-1 text-white hover:text-neutral-300" onclick="hey('Skill transform scale-100 hover:scale-110 duration-400s')">Skills</button>
+        <button class="shadow-lg-lg m-1 p-1 text-white hover:text-neutral-300" onclick="hey('Experience')">Experience</button>
+        <button class="m-1 p-1 text-white hover:text-neutral-300" onclick="hey('Projects')">Projects</button>
+    </div>
+
+</header>
+
+    <main class="body text-white">
+        <div class="flex flex-col justify-center text-white mt-20 mb-20">
+
+            <div class="flex justify-center">
+                <h2 class="text-5xl mr-3 text-white mb-5">Hi, I'm Mark</h2> <img
+                    class="w-12 mb-5" src="./Assets/waving-hand-svgrepo-com.svg" alt="" />
+            </div>
+            <h3 class="text-white m-auto">I'm a Computer Science student at Western University. <br> I enjoy Full-Stack
+                Software Development.</h3>
+
+            <div class="flex justify-center mt-1">
+                <a target="_blank"
+                    href="https://drive.google.com/file/d/1FfoSr5A63EoV-GNHmXXki0fJpm1p_16B/view?usp=sharing"
+                    class="px-2 flex m-2 border border-zinc-700 bg-neutral-800 text-white rounded transform scale-100 hover:scale-110 duration-500 animate pop1">
+                    <p class="mr-2 mt-3">Resume</p> <img class="w-5" src="./Assets/document-pdf-svgrepo-com(1).svg"
+                        alt="" />
+                    <a target="_blank" href="https://www.linkedin.com/in/mark-samwaiel"><img
+                            class="w-12 m-2 border border-zinc-700 p-2 rounded bg-neutral-800 transition-all transform scale-100 hover:scale-125 duration-500 animate pop2"
+                            src="./Assets/linkedin-svgrepo-com(2).svg" alt=""></a>
+                    <a target="_blank" href="https://Github.com/marksmwl"><img
+                            class="w-12 m-2 border border-zinc-700 p-2 rounded bg-neutral-800 transform scale-100 hover:scale-125 duration-500 animate pop3"
+                            src="./Assets/github-svgrepo-com.svg" alt=""></a>
+                    <a target="_blank" href="mailto:msamwaie@uwo.ca"><img
+                            class="w-12 m-2 border border-zinc-700 p-1 rounded bg-neutral-800 transform scale-100 hover:scale-125 duration-500 animate pop4"
+                            src="./Assets/email-svgrepo-com(1).svg" alt=""></a>
+            </div>
+            <small class="m-auto">Based in Toronto, Ontario</small>
+
+
+        </div>
+
+        <!-- <div class="text-white flex flex-col align-center justify-center text-l w-full mt-10 px-3" id="Skill transform scale-100 hover:scale-110 duration-400s">
+
+            <div class="m-auto p-3 bg-gradient-to-tl from-neutral-600 via-neutral-700 to-neutral-800 p-4 rounded-lg shadow-lg transform transition duration-200 hover:scale-105 border border-white"
+                style="max-width: 46.8em;">
+                
+
+            </div>
+
+        </div> -->
+
+        <div class="text-white flex flex-col align-center justify-center text-l w-full mt-10 px-3" id="Skill transform scale-100 hover:scale-110 duration-400s">
+
+            <div class="m-auto p-3 bg-gradient-to-tl from-neutral-600 via-neutral-700 to-neutral-800 p-4 rounded-lg shadow-lg border border-white"
+                style="max-width: 46.8em;">
+                <div class="mb-3">
+                    <h3 class="text-3xl" id="Skill transform scale-100 hover:scale-110 duration-400" style="margin-bottom: -5px;">Technical Skills</h3>
+                    <small>Technology that I've gained experience with through projects, school, or
+                        work</small>
+                </div>
+
+                <p>Frontend</p>
+                <div class="bg-neutral-600 rounded shadow-lg p-2 flex flex-wrap text-center">
+                    <div class="skill transform scale-100 hover:scale-110 duration-400">
+                        <img src="Assets/html-5-svgrepo-com.svg">
+                        HTML
+                    </div>
+                    <div class="skill transform scale-100 hover:scale-110 duration-400">
+                        <img src="Assets/css-3-svgrepo-com.svg">
+                        CSS
+                    </div>
+                    <div class="skill transform scale-100 hover:scale-110 duration-400">
+                        <img style="margin-top: 0.55em;" src="Assets/Tailwind_CSS_Logo.svg.png">
+                        <p style="margin-top: 0.55em;">Tailwind</p>
+                    </div>
+                    <div class="skill transform scale-100 hover:scale-110 duration-400">
+                        <img src="Assets/js-svgrepo-com.svg">
+                        JavaScript
+                    </div>
+                    <div class="skill transform scale-100 hover:scale-110 duration-400">
+                        <img src="Assets/typescript-svgrepo-com.svg">
+                        TypeScript
+                    </div>
+                    <div class="skill transform scale-100 hover:scale-110 duration-400">
+                        <img src="Assets/react-svgrepo-com.svg">
+                        React
+                    </div>
+                    <div class="skill transform scale-100 hover:scale-110 duration-400">
+                        <img src="Assets/angular-svgrepo-com.svg">
+                        Angular
+                    </div>
+                </div>
+
+                <p class="mt-5">Backend and Database</p>
+                <div class="bg-neutral-600 rounded shadow-lg p-2 flex flex-wrap text-center">
+                    <div class="skill transform scale-100 hover:scale-110 duration-400">
+                        <img src="Assets/node-js-svgrepo-com.svg">
+                        Node
+                    </div>
+                    <div class="skill transform scale-100 hover:scale-110 duration-400">
+                        <img src="Assets/python-svgrepo-com.svg">
+                        Python
+                    </div>
+                    <div class="skill transform scale-100 hover:scale-110 duration-400">
+                        <img src="Assets/django-svgrepo-com.svg">
+                        Django
+                    </div>
+                    <div class="skill transform scale-100 hover:scale-110 duration-400">
+                        <img src="Assets/java-svgrepo-com.svg">
+                        Java
+                    </div>
+                    <div class="skill transform scale-100 hover:scale-110 duration-400">
+                        <img src="Assets/spring-svgrepo-com.svg">
+                        Spring
+                    </div>
+                    <div class="skill transform scale-100 hover:scale-110 duration-400">
+                        <img class="w-11" src="Assets/c.svg">
+                        C++
+                    </div>
+                    <div class="skill transform scale-100 hover:scale-110 duration-400">
+                        <img src="Assets/postgresql-svgrepo-com.svg">
+                        PostgreSQL
+                    </div>
+                    <div class="skill transform scale-100 hover:scale-110 duration-400">
+                        <img src="Assets/mysql-svgrepo-com.svg">
+                        MySQL
+                    </div>
+                </div>
+
+                <p class="mt-5">Cloud</p>
+                <div class="bg-neutral-600 rounded shadow-lg p-2 flex flex-wrap text-center">
+                    <div class="skill transform scale-100 hover:scale-110 duration-400">
+                        <img src="Assets/aws-svgrepo-com.svg">
+                        AWS
+                    </div>
+                    <div class="skill transform scale-100 hover:scale-110 duration-400">
+                        <img src="Assets/linux-svgrepo-com.svg">
+                        Linux
+                    </div>
+                    
+
+                    <div class="skill transform scale-100 hover:scale-110 duration-400">
+                        <img src="Assets/git-svgrepo-com.svg">
+                        Git
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="text-white flex flex-col align-center justify-center text-l w-full m-auto mt-14 px-3">
+            <div
+                class="m-auto p-3 bg-gradient-to-tl from-neutral-600 via-neutral-700 to-neutral-800 p-4 rounded-lg shadow-lg border border-white animate">
+                <div class="mb-3">
+                    <h3 class="text-3xl" id="Experience" style="margin-bottom: -5px;">Experience</h3>
+                    <small>Professional Tech-Related Experience</small>
+                </div>
+
+                <div class="bg-neutral-600 rounded shadow-lg p-2">
+
+                    <p class="text-lg font-bold mb-1">Software Engineer Intern | Lullaboo</p>
+                    <p class="text-wrap">
+                        • Developed an internal web app with Angular, facilitating employment and onboarding of 300+
+                        staff
+                        daily. <br>
+                        • Created cloud email microservice with Node.js to notify over 600 staff and management of
+                        relevant
+                        events. <br>
+                        • Built Python/Azure ETL data pipelines, updating SQL databases with over 40,000 entries for
+                        analysis.
+                        <br>
+                        • Automated form testing with Python and Selenium, increasing execution by up to 150 times.
+                    </p>
+
+                    <p class="mt-2">Technologies Used:</p>
+                    <div
+                        class="flex flex-wrap justify-evenly border border-white rounded p-2 text-center bg-neutral-800 shadow-lg">
+                        <style>
+                            .skill transform scale-100 hover:scale-110 duration-400 {
+                                margin: 7px;
+                            }
+                        </style>
+
+
+                        <div class="skill transform scale-100 hover:scale-110 duration-400">
+                            <img class="m-auto" src="Assets/angular-svgrepo-com.svg">
+                            Angular
+                        </div>
+                        <div class="skill transform scale-100 hover:scale-110 duration-400">
+                            <img class="m-auto" src="Assets/typescript-svgrepo-com.svg">
+                            TypeScript
+                        </div>
+                        <div class="skill transform scale-100 hover:scale-110 duration-400">
+                            <img class="m-auto" src="Assets/node-js-svgrepo-com.svg">
+                            Node
+                        </div>
+                        <div class="skill transform scale-100 hover:scale-110 duration-400">
+                            <img class="m-auto" src="Assets/python-svgrepo-com.svg">
+                            Python
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3 mt-5">
+                    <h3 class="text-3xl" id="Skill transform scale-100 hover:scale-110 duration-400s" style="margin-bottom: -5px;">Education</h3>
+                    <small>Formal Education</small>
+                </div>
+
+                <div class="bg-neutral-600 rounded shadow-lg p-2">
+
+                    <p class="text-lg font-bold mb-1">B.Sc, Honours Spec. Computer Science | Minor, Software Engineering</p>
+                    <small>Western University</small>
+                    <p class="text-wrap">
+                        
+                    </p>
+
+
+                </div>
+
+                <div class="mb-3 mt-5">
+                    <h3 class="text-3xl" id="Skill transform scale-100 hover:scale-110 duration-400s" style="margin-bottom: -5px;">Certifications</h3>
+                    <small>Additional Education</small>
+                </div>
+
+
+                <div class="bg-neutral-600 rounded shadow-lg p-2">
+
+                    <p class="text-lg font-bold mb-1">AWS Technical Essentials</p>
+                    <small>Coursera</small>
+                    <p class="text-wrap">
+                        leartned blah saei by doing the thing that practically stuff trhis data mine this
+                    </p>
+
+
+
+            </div>
+
+            <!-- <iframe src="https://drive.google.com/file/d/17NMM3K7UGzWQm9hEMW-h5ifyFjGFeiE7/view?usp=drive_link"
+                width="600" height="400"></iframe> -->
+
+        </div>
+
+        <div class="text-white flex flex-col align-center justify-center text-l w-full m-auto mt-14">
+
+            <div class="m-auto p-3 bg-gradient-to-tl from-neutral-600 via-neutral-700 to-neutral-800 p-4 rounded-lg shadow-lg border border-white animate"
+                style="max-width: 46.8em;">
+                <div class="mb-3">
+                    <h3 class="text-3xl" id="Projects" style="margin-bottom: -5px;">My Projects</h3>
+                    <small>Personal Projects that I've worked on</small>
+                </div>
+
+                <style>
+                    .project {
+                        margin-bottom: 2em;
+                        padding: 0.5em;
+                    }
+
+                    .project h4 {
+                        font-size: 1.5em;
+                        font-weight: bold;
+                        margin-bottom: 0.3em;
+                    }
+
+                    .project .video {
+                        margin: auto;
+                        margin-top: 2em;
+                    }
+                </style>
+
+                <div class="project bg-neutral-600 rounded shadow-lg " id="Chess-Engine-Project">
+
+                    <h4>Chess Engine</h4>
+
+                    <div>
+                        <p>Using algorithms such as minimax and alpha-beta pruning, I created artificial intelligence
+                            capable of outplaying me in chess.</p>
+                        <p>In the video below, I explain how my program is able to play chess better than I can, and I
+                            give
+                            a short demo of
+                            the project.</p>
+
+                    </div>
+                    <iframe class="video" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"
+                        allowfullscreen></iframe>
+                    <div class="mt-2 flex flex-col items-center justify-center">
+                        <img src="Assets/github-142-svgrepo-com.svg"> <a target="_blank"
+                            href="https://github.com/marksmwl/CHESS" style="color: white">View the Code</a>
+                    </div>
+
+                    <p class="mt-2">Technologies Used:</p>
+                    <div
+                        class="flex flex-wrap justify-evenly border border-white rounded p-2 text-center bg-neutral-800 shadow-lg">
+                        <style>
+                            .skill transform scale-100 hover:scale-110 duration-400 {
+                                margin: 7px;
+                            }
+                        </style>
+                        <div class="skill transform scale-100 hover:scale-110 duration-400">
+
+                            <img class="w-11" src="Assets/c.svg">
+                            C++
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="project bg-neutral-600 rounded shadow-lg " id="Finance-Project">
+                    <h4>Finance Tracker</h4>
+                    <div>
+                        <p>
+                            To help myself visualize and keep track of my spending habits, I created an application to
+                            help
+                            me budget for different areas in my life.
+                        </p>
+                    </div>
+                    <iframe class="video" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"
+                        allowfullscreen></iframe>
+
+                    <div class="mt-2 flex flex-col items-center justify-center">
+                        <img src="Assets/github-142-svgrepo-com.svg"> <a target="_blank"
+                            href="https://github.com/marksmwl/Finance-App" style="color: white">View the Code</a>
+                    </div>
+
+                    <p class="mt-2">Technologies Used:</p>
+                    <div
+                        class="flex flex-wrap justify-evenly border border-white rounded p-2 text-center bg-neutral-800 shadow-lg">
+                        <style>
+                            .skill transform scale-100 hover:scale-110 duration-400 {
+                                margin: 7px;
+                            }
+                        </style>
+                        <div class="skill transform scale-100 hover:scale-110 duration-400">
+                            <img class="m-auto" src="Assets/react-svgrepo-com.svg">
+                            React
+                        </div>
+                        <div class="skill transform scale-100 hover:scale-110 duration-400">
+                            <img style="margin-top: 0.55em;" src="Assets/Tailwind_CSS_Logo.svg.png">
+                            <p style="margin-top: 0.55em;">Tailwind</p>
+                        </div>
+                        <div class="skill transform scale-100 hover:scale-110 duration-400">
+                            <img src="Assets/java-svgrepo-com.svg">
+                            Java
+                        </div>
+                        <div class="skill transform scale-100 hover:scale-110 duration-400">
+                            <img class="m-auto" src="Assets/spring-svgrepo-com.svg">
+                            Spring
+                        </div>
+                        <div class="skill transform scale-100 hover:scale-110 duration-400">
+                            <img class="m-auto" src="Assets/aws-svgrepo-com.svg">
+                            AWS
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project bg-neutral-600 rounded shadow-lg" id="Flash-Card-Project">
+                    <h4>AI Flash Card Generator</h4>
+                    <p>
+                        Creating flash cards takes up significant time. Using the Gemini API, I sped up the process.
+                    </p>
+                    <iframe class="video" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"
+                        allowfullscreen></iframe>
+
+                    <div class="mt-2 flex flex-col items-center justify-center">
+                        <img src="Assets/github-142-svgrepo-com.svg"> <a target="_blank"
+                            href="https://github.com/marksmwl/flashCard-App" style="color: white">View the Code</a>
+                    </div>
+
+                    <p class="mt-2">Technologies Used:</p>
+                    <div
+                        class="flex flex-wrap justify-evenly border border-white rounded p-2 text-center bg-neutral-800 shadow-lg">
+                        <style>
+                            .skill transform scale-100 hover:scale-110 duration-400 {
+                                margin: 7px;
+                            }
+                        </style>
+                        <div class="skill transform scale-100 hover:scale-110 duration-400">
+                            <img src="Assets/react-svgrepo-com.svg">
+                            React
+                        </div>
+                        <div class="skill transform scale-100 hover:scale-110 duration-400">
+                            <img src="Assets/django-svgrepo-com.svg">
+                            Django
+                        </div>
+                        <div class="skill transform scale-100 hover:scale-110 duration-400">
+                            <img src="Assets/postgresql-svgrepo-com.svg">
+                            PostgreSQL
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="flex flex-col items-center justify-center mt-14 text-white">
+            <small>Connect With Me</small>
+
+            <div class="flex">
+                <a target="_blank"
+                    href="https://drive.google.com/file/d/1FfoSr5A63EoV-GNHmXXki0fJpm1p_16B/view?usp=sharing"
+                    class="px-2 flex m-2 border border-zinc-700 bg-neutral-800 text-white rounded transform scale-100 hover:scale-110 duration-500">
+                    <p class="mr-2 mt-3">Resume</p> <img class="w-5" src="./Assets/document-pdf-svgrepo-com(1).svg"
+                        alt="" />
+                    <a target="_blank" href="https://www.linkedin.com/in/mark-samwaiel"><img
+                            class="w-12 m-2 border border-zinc-700 p-2 rounded bg-neutral-800 transition-all transform scale-100 hover:scale-125 duration-500"
+                            src="./Assets/linkedin-svgrepo-com(2).svg" alt=""></a>
+                    <a target="_blank" href="https://Github.com/marksmwl"><img
+                            class="w-12 m-2 border border-zinc-700 p-2 rounded bg-neutral-800 transform scale-100 hover:scale-125 duration-500"
+                            src="./Assets/github-svgrepo-com.svg" alt=""></a>
+                    <a target="_blank" href="mailto:msamwaie@uwo.ca"><img
+                            class="w-12 m-2 border border-zinc-700 p-1 rounded bg-neutral-800 transform scale-100 hover:scale-125 duration-500"
+                            src="./Assets/email-svgrepo-com(1).svg" alt="">
+                    </a>
+
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+<script src="index.js"></script>
+
+</html>
