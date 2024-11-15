@@ -15,25 +15,25 @@
 
     <style>
         .animate.pop1 {
-        animation-duration: 0.3s;
-        animation-name: animate-pop;
-        animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
-        }
-
-        .animate.pop2 {
         animation-duration: 0.4s;
         animation-name: animate-pop;
         animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
         }
 
+        .animate.pop2 {
+        animation-duration: 0.55s;
+        animation-name: animate-pop;
+        animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+        }
+
         .animate.pop3 {
-        animation-duration: 0.5s;
+        animation-duration: 0.70s;
         animation-name: animate-pop;
         animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
         }
 
         .animate.pop4 {
-        animation-duration: 0.6s;
+        animation-duration: 0.85s;
         animation-name: animate-pop;
         animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
         }
@@ -44,7 +44,7 @@
 
         @media screen and (min-width:600px) {
             .skill {
-            margin: 1.1em;
+            margin: 0.8em;
         }
         }
 
@@ -119,7 +119,7 @@
                 style="max-width: 46.8em;">
                 <div class="mb-3">
                     <h3 class="text-3xl" id="Skills" style="margin-bottom: -5px;">Technical Skills</h3>
-                    <small>Technology that I've gained experience with through projects, school, or
+                    <small>Technology that I'ved used in projects, school, or
                         work</small>
                 </div>
 
@@ -178,6 +178,10 @@
                         Spring
                     </div>
                     <div class="skill transform scale-100 hover:scale-110 duration-400">
+                        <img src="Assets/C_Programming_Language.svg.png">
+                        C
+                    </div>
+                    <div class="skill transform scale-100 hover:scale-110 duration-400">
                         <img class="w-11" src="Assets/c.svg">
                         C++
                     </div>
@@ -191,18 +195,24 @@
                     </div>
                 </div>
 
-                <p class="mt-5">Cloud</p>
+                <p class="mt-5">Cloud, Devops, and Tools</p>
                 <div class="bg-neutral-600 rounded shadow-lg p-2 flex flex-wrap text-center">
                     <div class="skill transform scale-100 hover:scale-110 duration-400">
                         <img src="Assets/aws-svgrepo-com.svg">
                         AWS
                     </div>
                     <div class="skill transform scale-100 hover:scale-110 duration-400">
+                        <img src="Assets/firebase-svgrepo-com.svg">
+                        Firebase 
+                    </div>
+                    <div class="skill transform scale-100 hover:scale-110 duration-400">
                         <img src="Assets/linux-svgrepo-com.svg">
                         Linux
                     </div>
-                    
-
+                     <div class="skill transform scale-100 hover:scale-110 duration-400">
+                        <img src="Assets/nginx-svgrepo-com.svg">
+                        Nginx 
+                    </div>
                     <div class="skill transform scale-100 hover:scale-110 duration-400">
                         <img src="Assets/git-svgrepo-com.svg">
                         Git
@@ -215,25 +225,31 @@
 
         <div class="text-white flex flex-col align-center justify-center text-l w-full m-auto mt-14 px-3">
             <div
-                class="m-auto p-3 bg-gradient-to-tl from-neutral-600 via-neutral-700 to-neutral-800 p-4 rounded-lg shadow-lg border border-white animate">
+                class="m-auto p-3 bg-gradient-to-tl from-neutral-600 via-neutral-700 to-neutral-800 p-4 rounded-lg shadow-lg border border-white animate" style="max-width: 46.8em;">
                 <div class="mb-3">
                     <h3 class="text-3xl" id="Experience" style="margin-bottom: -5px;">Experience</h3>
                     <small>Professional Tech-Related Experience</small>
                 </div>
 
-                <div class="bg-neutral-600 rounded shadow-lg p-2">
+                <div class="bg-neutral-700 rounded shadow-lg p-2">
+                    <small>April 2024 - September 2024</small>
+                    <p class="text-lg font-bold mb" style="margin-bottom: -0.3em;">Software Engineer Intern</p>
+                    <small>Lullaboo</small>
 
-                    <p class="text-lg font-bold mb-1">Software Engineer Intern | Lullaboo</p>
-                    <p class="text-wrap">
+                    <p class="text-wrap mb-3 mt-3 text-sm">
                         • Developed an internal web app with Angular, facilitating employment and onboarding of 300+
                         staff
-                        daily. <br>
+                        daily. 
+                    </p>
+                    <p class="mb-3 text-sm">
                         • Created cloud email microservice with Node.js to notify over 600 staff and management of
                         relevant
-                        events. <br>
-                        • Built Python/Azure ETL data pipelines, updating SQL databases with over 40,000 entries for
-                        analysis.
-                        <br>
+                        events.
+                    </p>
+                    <p class="mb-3 text-sm">
+                        • Built Python/Azure ETL data pipelines, updating SQL databases with over 40,000 entries for analysis.
+                    </p>
+                    <p class="mb-3 text-sm">
                         • Automated form testing with Python and Selenium, increasing execution by up to 150 times.
                     </p>
 
@@ -241,27 +257,44 @@
                     <div
                         class="flex flex-wrap justify-evenly border border-white rounded p-2 text-center bg-neutral-800 shadow-lg">
                         <style>
-                            .skill transform scale-100 hover:scale-110 duration-400 {
-                                margin: 7px;
+                            .skillexp {
+                                margin: 0.5em;
+                            }
+                            @media screen and (min-width:600px){
+                                .skillexp {
+                                 margin: 1.36em;
+                                } 
                             }
                         </style>
 
 
-                        <div class="skill transform scale-100 hover:scale-110 duration-400">
+                        <div class="skillexp transform scale-100 hover:scale-110 duration-400">
                             <img class="m-auto" src="Assets/angular-svgrepo-com.svg">
                             Angular
                         </div>
-                        <div class="skill transform scale-100 hover:scale-110 duration-400">
+                        <div class="skillexp transform scale-100 hover:scale-110 duration-400">
                             <img class="m-auto" src="Assets/typescript-svgrepo-com.svg">
                             TypeScript
                         </div>
-                        <div class="skill transform scale-100 hover:scale-110 duration-400">
+                        <div class="skillexp transform scale-100 hover:scale-110 duration-400">
                             <img class="m-auto" src="Assets/node-js-svgrepo-com.svg">
                             Node
                         </div>
-                        <div class="skill transform scale-100 hover:scale-110 duration-400">
+                        <div class="skillexp transform scale-100 hover:scale-110 duration-400">
                             <img class="m-auto" src="Assets/python-svgrepo-com.svg">
                             Python
+                        </div>
+                        <div class="skillexp transform scale-100 hover:scale-110 duration-400">
+                        <img src="Assets/mysql-svgrepo-com.svg">
+                        MySQL
+                    </div>
+                        <div class="skillexp transform scale-100 hover:scale-110 duration-400">
+                        <img src="Assets/firebase-svgrepo-com.svg">
+                        Firebase 
+                    </div>
+                        <div class="skillexp transform scale-100 hover:scale-110 duration-400">
+                            <img src="Assets/git-svgrepo-com.svg">
+                            Git
                         </div>
                     </div>
                 </div>
@@ -273,13 +306,68 @@
 
                 <div class="bg-neutral-600 rounded shadow-lg p-2">
 
-                    <p class="text-lg font-bold mb-1">B.Sc, Honours Spec. Computer Science | Minor, Software Engineering</p>
+                    <small>September 2022 - Present</small>
+                    <p class="text-lg font-bold mb-1" style="margin-bottom: -0.2em;">Honors B.S in Computer Science</p>
                     <small>Western University</small>
-                    <p class="text-wrap">
-                        
+                    <p class="text-wrap text-sm mt-2">
+                        • Recipient of the Dean's Honor List. 
                     </p>
 
+                    <p class="text-wrap text-sm mt-2">
+                        • Pursuing a minor in Software Engineering. 
+                    </p>
 
+                    <p class="mt-2">Technologies Used:</p>
+                    <div
+                        class="flex flex-wrap justify-evenly border border-white rounded p-2 text-center bg-neutral-800 shadow-lg">
+                        <style>
+                            .skillexp {
+                                margin: 0.5em;
+                            }
+                            @media screen and (min-width:600px){
+                                .skillexp {
+                                 margin: 1.36em;
+                                } 
+                                .skillexppy {
+                                    margin-top: 2em;
+                                } 
+                                .skillexpc {
+                                    margin-top: 1.2em;
+                                }
+                            }
+                            @media screen and (max-width:600px){
+                                .skillexppy {
+                                    margin-top: 1em;
+                                } 
+                                .skillexpc {
+                                    margin-top: 0.3em;
+                                }
+                            }
+                        </style>
+
+                        <div class="skillexp transform scale-100 hover:scale-110 duration-400">
+                            <img src="Assets/linux-svgrepo-com.svg">
+                            Linux
+                        </div>
+                        <div class="skillexpc transform scale-100 hover:scale-110 duration-400">
+                            <img src="Assets/C_Programming_Language.svg.png">
+                            C
+                        </div>
+                        <div class="skillexp transform scale-100 hover:scale-110 duration-400">
+                            <img src="Assets/git-svgrepo-com.svg">
+                            Git
+                        </div>
+                        <div class="skillexp transform scale-100 hover:scale-110 duration-400">
+                            <img src="Assets/java-svgrepo-com.svg">
+                            Java
+                        </div>
+                        <div class="skillexppy transform scale-100 hover:scale-110 duration-400">
+                            <img class=" m-auto" style="margin-top: -0.5em;" src="Assets/python-svgrepo-com.svg">
+                            Python
+                        </div>
+             
+                        
+                    </div>
                 </div>
 
                 <div class="mb-3 mt-5">
@@ -290,10 +378,11 @@
 
                 <div class="bg-neutral-600 rounded shadow-lg p-2">
 
-                    <p class="text-lg font-bold mb-1">AWS Technical Essentials</p>
+                    <small>Issued November 2024</small>
+                    <p class="text-lg font-bold mb-1" style="margin-bottom: -0.3em;">AWS Technical Essentials</p>
                     <small>Coursera</small>
-                    <p class="text-wrap">
-                        Gained hands-on experience with AWS services such as Lambda, EC2, S3, RDS, and DynamoDB. 
+                    <p class="text-wrap mt-2 text-sm">
+                        • Gained hands-on experience configuring and using AWS services such as Lambdas, EC2, S3, RDS, and DynamoDB. 
                     </p>
 
 
@@ -337,7 +426,9 @@
                     <h4>Chess Engine</h4>
 
                     <div>
-                        <p>Developed a chess engine using algorithms like Minimax and Alpha-Beta Pruning to evaluate game states and make optimal moves. The engine includes advanced move generation and evaluation techniques, enabling it to play competitively against human players. Demonstrated proficiency in C++ and algorithm design while creating an interactive AI capable of outperforming me in chess.</p>
+                        <p class="text-sm mb-2">Developed a chess engine using bitboards and algorithms like Minimax and Alpha-Beta Pruning to efficiently search through game states and make optimal moves. </p>
+                        <p class="text-sm mb-2">The engine is powered by advanced move generation techniques, the moves are then evaluated, filtered, and searched through, resulting in artificial intelligence capable of picking the best possible moves to play competitively against players. </p>
+                        <p class="text-sm mb-2">Gained further experience with low level programming concepts like bitboards, bitwise operations, memory optimization, and Operating System APIs.</p> 
                     </div>
                   
                     
@@ -367,9 +458,9 @@
                 <div class="project bg-neutral-600 rounded shadow-lg " id="Finance-Project">
                     <h4>Finance Tracker</h4>
                     <div>
-                        <p>
-                            Designed and implemented a financial expense tracking application to help users visualize spending habits and set budgets for different categories. Built the backend with Java and Spring Boot, utilizing PostgreSQL for data storage, and integrated the frontend with React and Tailwind CSS for a responsive user interface. Deployed the application using AWS services, showcasing full-stack development expertise.
-                        </p>
+                        <p class="text-sm mb-2">Built a financial expense tracking application to help users monitor their spending and set personalized budgets, with personalized suggestions. </p>
+                        <p class="text-sm mb-2">The app uses a Spring Boot backend on an EC2 instance with PostgreSQL on RDS for the database, while the React and Tailwind CSS frontend ensures a smooth, responsive user experience. </p>
+                        <p class="text-sm mb-2">Strengthened my understanding of Spring boot, JPA, and Web Security, and gained hands-on experience deploying applications on AWS.</p> 
                     </div>
                   
 
@@ -412,9 +503,11 @@
 
                 <div class="project bg-neutral-600 rounded shadow-lg" id="Flash-Card-Project">
                     <h4>AI Flash Card Generator</h4>
-                    <p>
-                        Created a web application that leverages the Gemini API to generate flashcards from user-provided content, significantly reducing the time required to create study materials. Developed a responsive frontend with React, a robust backend using Django, and PostgreSQL for data management. The project demonstrates my ability to integrate AI APIs into real-world applications to enhance user productivity
-                    </p>
+                    <div>
+                        <p class="text-sm mb-2">Created a web application that leverages the Gemini API to simplify the process of generating study flashcards. </p>
+                        <p class="text-sm mb-2">The project combines a React-based frontend with a Django backend, using PostgreSQL to efficiently manage user data and AI APIs to automate content generation. </p>
+                        <p class="text-sm mb-2">Gained experience integrating AI tools into real-world applications while improving my proficiency in react and gaining backend development skills.</p> 
+                    </div>
                    
 
                    
