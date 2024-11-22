@@ -917,7 +917,7 @@ video {
 }
 
 body {
-  font-family: "Times New Roman", serif;
+  font-family: "Times New Roman", serif !important;
   background-color: rgb(35, 35, 36);
 }
 
