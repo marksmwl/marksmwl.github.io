@@ -3,9 +3,11 @@ function hey(idToScroll) {
     element.scrollIntoView({
         behavior: "smooth"
     })
+
+    element.click();
 }
 
-document.getElementById("defaulttab").click();
+document.getElementById("Experience").click();
 
 function openMenu() {
     document.querySelector(".menu-popup").classList.toggle("show")

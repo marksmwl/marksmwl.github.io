@@ -64,9 +64,10 @@
         }
     </style>
 
-    <header class="header">
+    <header class="header" >
         <div
             class="flex justify-center shadow-lg w-fit m-auto p-2 rounded-lg mt-10 border border-zinc-700 bg-gradient-to-tl from-neutral-900 to-neutral-700">
+
             <button class="m-1 p-1 text-white hover:text-neutral-300" onclick="hey('Skills')">Skills</button>
             <button class="shadow-lg-lg m-1 p-1 text-white hover:text-neutral-300"
                 onclick="hey('Experience')">Experience</button>
@@ -265,18 +266,18 @@
         }
 
         </style>
-        <div id="Education" class="text-white flex flex-col align-center justify-center text-l w-full m-auto mt-14 px-3 my-5">
+        <div class="text-white flex flex-col align-center justify-center text-l w-full m-auto mt-14 px-3 my-5">
             
             <div class="m-auto p-3 bg-gradient-to-tl from-neutral-600 via-neutral-700 to-neutral-800 p-4 rounded-lg shadow-lg border border-white animate"
                 style="max-width: 46.8em;">
                 <ul class="nav nav-tabs flex text-white" id="myTab" role="tablist">
                     <li class="nav-item mr-3" role="presentation">
-                        <button class="tablinks" style="font-weight: bold; font-size: small;" id="defaulttab" onclick="openCity(event, 'London')">
+                        <button class="tablinks" style="font-weight: bold; font-size: small;" id="Experience" onclick="openCity(event, 'London')">
                             Experience
                         </button>
                     </li>
                     <li class=" mr-3" role="presentation">
-                        <button class="tablinks" style="font-weight: bold; font-size: small;" onclick="openCity(event, 'Paris')">
+                        <button class="tablinks" style="font-weight: bold; font-size: small;" id="Education" onclick="openCity(event, 'Paris')">
                             Education
                         </button>
                     </li>
@@ -289,7 +290,7 @@
                 <div >
                     <div class="tabcontent" id="London" role="tabpanel" aria-labelledby="home-tab">
                         <div class="mb-3 mt-2">
-                            <h3 class="text-3xl" id="Experience" style="margin-bottom: -5px;">Experience</h3>
+                            <h3 class="text-3xl" style="margin-bottom: -5px;">Experience</h3>
                             <small>Professional Tech-Related Experience</small>
                         </div>
         
@@ -365,7 +366,7 @@
                     </div>
                     <div class="tabcontent" id="Paris" role="tabpanel" aria-labelledby="profile-tab">
                         <div class="mb-3 mt-2">
-                            <h3 class="text-3xl" id="Education" style="margin-bottom: -5px;">Education</h3>
+                            <h3 class="text-3xl" style="margin-bottom: -5px;">Education</h3>
                             <small>Formal Education</small>
                         </div>
         
@@ -428,7 +429,7 @@
                     </div>
                     <div class="tabcontent" id="Tokyo" role="tabpanel" aria-labelledby="contact-tab">
                         <div class="mb-3 mt-2">
-                            <h3 class="text-3xl" id="Skill transform scale-100 hover:scale-110 duration-400s"
+                            <h3 class="text-3xl" id="Skill"
                                 style="margin-bottom: -5px;">Certifications</h3>
                             <small>Additional Education</small>
                         </div>
@@ -494,9 +495,8 @@
     <div>
         <p class="text-sm mb-2">Built a financial expense tracking application to help users monitor
             their spending and set personalized budgets, with personalized suggestions. </p>
-        <p class="text-sm mb-2">The app uses a Spring Boot backend on an EC2 instance with
-            PostgreSQL on RDS for the database, while the React and Tailwind CSS frontend hosted on S3 ensures a
-            smooth, responsive user experience. </p>
+        <p class="text-sm mb-2">The app uses a Spring Boot backend with JPA for database operations and communicates with the React frontend by providing a REST API. The UI is
+            responsive and uses state management to react to changes in data, providing an excellent user experience. </p>
         <p class="text-sm mb-2">Strengthened my understanding of Spring boot, JPA, Web Security,
             and became more familiar with React and Tailwind.</p>
     </div>
@@ -560,10 +560,10 @@
             <img class="m-auto" src="Assets/spring-svgrepo-com.svg">
             Spring
         </div>
-        <div class="skill transform scale-100 hover:scale-110 duration-400">
-            <img class="m-auto" src="Assets/aws-svgrepo-com.svg">
-            AWS
-        </div>
+<!--        <div class="skill transform scale-100 hover:scale-110 duration-400">-->
+<!--            <img class="m-auto" src="Assets/aws-svgrepo-com.svg">-->
+<!--            AWS-->
+<!--        </div>-->
     </div>
 
     <div class="mt-2 flex flex-col items-center justify-center">
